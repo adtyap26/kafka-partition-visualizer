@@ -41,12 +41,14 @@ func (m Model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 						m.stage = ShowPlacement
 						// Call placement logic from the placement package
 						m.dcs, m.mrcRecommendation = placement.CalculatePlacement(
-							m.clusterType,
-							m.numPartitions,
-							m.replicationFactor,
-							m.minInSyncReplicas,
-							m.numBrokers, // Pass BrokersPerDC or TotalBrokers based on type
-							m.numDCs,
+							config.PlacementConfig{
+								m.clusterType,
+								m.numPartitions,
+								m.replicationFactor,
+								m.minInSyncReplicas,
+								m.numBrokers, // Pass BrokersPerDC or TotalBrokers based on type
+								m.numDCs,
+							},
 						)
 						// No command needed here, view will update based on new stage
 					}

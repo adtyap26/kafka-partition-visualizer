@@ -1,4 +1,4 @@
-module placement
+module github.com/adtyap26/kafka-partition-visualizer
 
 go 1.24.1
 

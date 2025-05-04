@@ -44,8 +44,8 @@ type DCInfo struct {
 type PlacementConfig struct {
 	ClusterType       ClusterType
 	NumPartitions     int
-	MinInSyncReplicas int
 	ReplicationFactor int
+	MinInSyncReplicas int
 	NumBrokers        int // Total for single, per DC for MRC
 	NumDCs            int
 }
