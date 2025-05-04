@@ -4,12 +4,10 @@ Interactive terminal UI for Kafka topic partition mapping
 
 [![Go Report Card](https://goreportcard.com/badge/github.com/adtyap26/kafka-partition-visualizer)](https://goreportcard.com/report/github.com/adtyap26/kafka-partition-visualizer)
 
-<!-- Add other badges if you like (license, build status) -->
+
 
 A terminal-based tool built with Go and Bubble Tea to visualize simulated Kafka partition placement for single-cluster and Multi-Region Cluster (MRC) setups.
 
-<!-- Optional: Add a screenshot or GIF here later -->
-<!-- ![Screenshot](docs/screenshot.png) -->
 
 ## Features
 
